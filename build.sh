@@ -73,7 +73,7 @@ ${SUDO} curl "https://install.meteor.com/" | sh
 echo ${INFO} Installing NPM build dependencies
 cd ${USERHOME}/source
 ${SUDO} meteor --release 1.5.2.2 list
-${SUDO} meteor --release 1.5.2.2 npm install
+${SUDO} meteor npm install
 
 echo ${INFO} Performing Meteor build
 ${SUDO} meteor build --directory ${USERHOME}/build
